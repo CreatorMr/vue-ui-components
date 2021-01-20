@@ -3,7 +3,11 @@ import App from './App.vue'
 
 import MyUI from '../modules/my-ui'
 // import {MyButton, MyInput } from '../modules/my-ui'
-
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+import TreeSearch from '../modules/my-ui/TreeSearch/index.js'
+Vue.use(TreeSearch)
+Vue.use(ElementUI);
 Vue.use(MyUI, {
   components: [
     'MyButton',

@@ -1,12 +1,14 @@
 import Button from './Button/index.vue';
 import Input from './Input/index.vue'
+// import TreeSearch from './TreeSearch/index.vue'
 
 const MyUI = {}
 
 const
   COMPONENTS = [
     Button,
-    Input
+    Input,
+    // TreeSearch
   ]
 
 const MyButton = {}
