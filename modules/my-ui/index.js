@@ -1,14 +1,15 @@
 import Button from './Button/index.vue';
 import Input from './Input/index.vue'
 // import TreeSearch from './TreeSearch/index.vue'
-
+import DatePicker from './Date-picker/index.vue'
 const MyUI = {}
 
 const
   COMPONENTS = [
     Button,
     Input,
-    // TreeSearch
+    // TreeSearch,
+    DatePicker
   ]
 
 const MyButton = {}
@@ -19,6 +20,7 @@ MyInput.install = Vue => Vue.component(Input.name, Input)
 export {
   MyButton, MyInput
 }
+// 全部加载
 MyUI.install = function (Vue, options) {
   // console.log(options)
   // Vue.compontents(MyButton.name, MyButton)

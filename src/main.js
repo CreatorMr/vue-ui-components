@@ -6,14 +6,17 @@ import MyUI from '../modules/my-ui'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import TreeSearch from '../modules/my-ui/TreeSearch/index.js'
-Vue.use(TreeSearch)
 Vue.use(ElementUI);
 Vue.use(MyUI, {
   components: [
     'MyButton',
-    'MyInput'
+    'MyInput',
+    // 'TreeSearch',
+    'DatePicker'
   ]
 })
+Vue.use(TreeSearch)
+
 // Vue.use(MyButton)
 // Vue.use(MyInput)
 Vue.config.productionTip = false
